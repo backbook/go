@@ -53,6 +53,22 @@ func main() {
 	fmt.Println(unsafe.Sizeof(var1)) //查看使用的数据空间占用
 	fmt.Println(unsafe.Sizeof(var2))
 
+	//计算换算小规律
+	const (
+		B  = 1 << (10 * iota) // 0
+		KB = 1 << (10 * iota) //1
+		MB = 1 << (10 * iota) //2
+		GB = 1 << (10 * iota) //3
+		TB = 1 << (10 * iota) //4
+		PB = 1 << (10 * iota) //4
+	)
+	fmt.Println(B)
+	fmt.Println(KB)
+	fmt.Println(MB)
+	fmt.Println(GB)
+	fmt.Println(TB)
+	fmt.Println(PB)
+
 	const (
 		a1 = iota //0
 		b1        //1
@@ -66,5 +82,11 @@ func main() {
 	)
 
 	fmt.Println(a1, b1, c1, d1, e1, f1, g, h, i)
+
+	var str = `
+     hello
+     world
+     世界`
+	fmt.Println(str)
 
 }

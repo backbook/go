@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	scoreMap := make(map[string]int64, 1)
+	var scoreMap map[string]int64 = make(map[string]int64, 1)
 	scoreMap["张三"] = 90
 	scoreMap["李四"] = 100
 	scoreMap["王五"] = 98

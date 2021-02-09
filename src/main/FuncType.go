@@ -5,6 +5,10 @@ import (
 	"log"
 )
 
+/**
+本类是探寻go语言方法的多态性
+*/
+
 func main() {
 	i := add(1, 1)
 	fmt.Println(i)

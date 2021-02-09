@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+/**
+go 语言匿名函数语法,和闭包使用，闭包指的是可以直接引用这参数，如i
+*/
 func main() {
 
 	i := 10

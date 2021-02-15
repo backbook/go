@@ -12,13 +12,14 @@ type Person struct {
 
 type Student struct {
 	Person  //只有类型 ，没有名字，匿名字段，相当于继承了Person的 ,匿名字段
+	name    string
 	score   int
 	address string
 }
 
 func main() {
 
-	var s1 Student = Student{Person{"张三", 20, '1'}, 99, "张家界"}
+	var s1 Student = Student{Person{"张三", 20, 0}, "何中", 99, "张家界"}
 	//%+v 显示更加详细的
 	fmt.Printf("s1 = %+v", s1)
 
@@ -29,5 +30,12 @@ func main() {
 
 	fmt.Println()
 	fmt.Println(s2.name)
+	var s3 Student
+	s3.name = "王五"
+	s3.address = "湖头"
+	s3.score = 100
+	s3.sex = 0
+	s3.Person.name = "杜悦"
+	fmt.Printf("s3 = %+v", s3)
 
 }
